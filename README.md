@@ -27,8 +27,10 @@ This plugin is a collection of basic components and scenes that I get to play ar
             - *Description*: Whether the Sine wave should go below 0.0 Changes MinScaleFactor to |MinScaleFactor|
     - ##### Demo
         - PBScaleComponent Setup
-            -  ![PBScaleComponent Setup](/Plugins/PBExp/Resources/PBScaleComponent Setup.gif)
+            - ![PBScaleComponent Setup](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/pbscalecomponents/Plugins/PBExp/Resources/PBScaleComponent%20Setup.gif))
         - PBScaleComponent Sine Scaling
-            -  ![PBScaleComponent Sine Scaling](/Plugins/PBExp/Resources/PBScaleComponent Sine.gif)
+            -  ![PBScaleComponent Sine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/pbscalecomponents/Plugins/PBExp/Resources/PBScaleComponent%20Sine.gif))
         -  PBScaleComponent Cosine Scaling
-            -  ![PBScaleComponent Cosine Scaling](/Plugins/PBExp/Resources/PBScaleComponent Cosine.gif)
+            -  ![PBScaleComponent Cosine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/pbscalecomponents/Plugins/PBExp/Resources/PBScaleComponent%20Cosine.gif))
+        -  PBScaleComponent Demo
+            -  [PBScaleComponent Demo](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/pbscalecomponents/Plugins/PBExp/Resources/PBScaleComponent%20Demo.gif))
