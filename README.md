@@ -33,4 +33,4 @@ This plugin is a collection of basic components and scenes that I get to play ar
         -  PBScaleComponent Cosine Scaling
             -  ![PBScaleComponent Cosine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/pbscalecomponents/Plugins/PBExp/Resources/PBScaleComponent%20Cosine.gif))
         -  PBScaleComponent Demo
-            -  [PBScaleComponent Demo](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/pbscalecomponents/Plugins/PBExp/Resources/PBScaleComponent%20Demo.gif))
+            -  ![PBScaleComponent Demo](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/pbscalecomponents/Plugins/PBExp/Resources/PBScaleComponent%20Demo.gif))
