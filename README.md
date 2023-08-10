@@ -9,7 +9,7 @@ This plugin is a collection of basic components and scenes that I get to play ar
     - ##### Properties
         - **SelectedAlgo**
             - *Type* : **EPBAlgorithm**
-            - *Description*: The Algorithm you choose to scale your components
+            - *Description*: An Enum of algorithms that can be used to apply to any logic
             - *Options*:
                 - **Sine**: Follows a Sine wave: sin(x)
                 - **Cosine**: Follows a Cosine wave: cos(x)
@@ -24,7 +24,7 @@ This plugin is a collection of basic components and scenes that I get to play ar
             - *Description*: The frequency with which the scale should modulate
         - **bStrictlyPositive**
             - *Type*: **bool**
-            - *Description*: Whether the Sine wave should go below 0.0 Changes MinScaleFactor to |MinScaleFactor|
+            - *Description*: Whether the wave should go below 0.0 Changes MinScaleFactor to |MinScaleFactor|
     - ##### Demo
         - PBScaleComponent Setup
             -  ![PBScaleComponent Setup](/Plugins/PBExp/Resources/PBScaleComponent Setup.gif)
@@ -32,3 +32,40 @@ This plugin is a collection of basic components and scenes that I get to play ar
             -  ![PBScaleComponent Sine Scaling](/Plugins/PBExp/Resources/PBScaleComponent Sine.gif)
         -  PBScaleComponent Cosine Scaling
             -  ![PBScaleComponent Cosine Scaling](/Plugins/PBExp/Resources/PBScaleComponent Cosine.gif)
+- ##### UPBRotationComponent
+    - ##### Properties
+        - **SelectedAlgo**
+            - *Type* : **EPBAlgorithm**
+            - *Description*: An Enum of algorithms that can be used to apply to any logic
+            - *Options*:
+                - **Sine**: Follows a Sine wave: sin(x)
+                - **Cosine**: Follows a Cosine wave: cos(x)
+        - **SelectedAxis**
+            - *Type* : **EPBAxis**
+            - *Description*: An Enum of Axes
+            - *Options*:
+                - **X**: X Axis
+                - **Y**: Y Axis
+                - **Z**: Z Axis
+        - **Amplitude**
+            - *Type*: **float**
+            - *Description*: The amplitude for your rotation
+        - **Frequency**
+            - *Type*: **float**
+            - *Description*: The frequency with which the rotation should modulate
+        - **bStrictlyPositive**
+            - *Type*: **bool**
+            - *Description*: Whether the wave should go below 0.0 Changes MinScaleFactor to |MinScaleFactor|
+    - ##### Demo
+        - PBRotationComponent Setup
+            -  ![PBScaleComponent Setup](/Plugins/PBExp/Resources/PBRotationComponent Setup.gif)
+        - PBRotationComponent Sine Rotation Single Axis
+            -  ![PBScaleComponent Sine Scaling](/Plugins/PBExp/Resources/PBRotationComponent Sine Rotation Single Axis.gif)
+        -  PBRotationComponent Sine Rotation Multi Axis
+            -  ![PBScaleComponent Cosine Scaling](/Plugins/PBExp/Resources/PBRotationComponent Sine Rotation Multi Axis.gif)
+        - PBRotationComponent Cosine Rotation Single Axis
+            -  ![PBScaleComponent Sine Scaling](/Plugins/PBExp/Resources/PBRotationComponent Cosine Rotation Single Axis.gif)
+        -  PBRotationComponent Cosine Rotation Multi Axis
+            -  ![PBScaleComponent Cosine Scaling](/Plugins/PBExp/Resources/PBRotationComponent Cosine Rotation Multi Axis.gif) 
+        -  PBRotationComponent Demo
+            -  ![PBScaleComponent Cosine Scaling](/Plugins/PBExp/Resources/PBRotationComponent Demo.gif)
