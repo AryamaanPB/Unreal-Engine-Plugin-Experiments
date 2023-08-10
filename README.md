@@ -27,11 +27,13 @@ This plugin is a collection of basic components and scenes that I get to play ar
             - *Description*: Whether the wave should go below 0.0 Changes MinScaleFactor to |MinScaleFactor|
     - ##### Demo
         - PBScaleComponent Setup
-            -  ![PBScaleComponent Setup](/Plugins/PBExp/Resources/PBScaleComponent Setup.gif)
+            - ![PBScaleComponent Setup](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBScaleComponent%20Setup.gif)
         - PBScaleComponent Sine Scaling
-            -  ![PBScaleComponent Sine Scaling](/Plugins/PBExp/Resources/PBScaleComponent Sine.gif)
+            -  ![PBScaleComponent Sine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBScaleComponent%20Sine.gif)
         -  PBScaleComponent Cosine Scaling
-            -  ![PBScaleComponent Cosine Scaling](/Plugins/PBExp/Resources/PBScaleComponent Cosine.gif)
+            -  ![PBScaleComponent Cosine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBScaleComponent%20Cosine.gif)
+        -  PBScaleComponent Demo
+            -  ![PBScaleComponent Demo](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBScaleComponent%20Demo.gif)
 - ##### UPBRotationComponent
     - ##### Properties
         - **SelectedAlgo**
@@ -58,14 +60,14 @@ This plugin is a collection of basic components and scenes that I get to play ar
             - *Description*: Whether the wave should go below 0.0 Changes MinScaleFactor to |MinScaleFactor|
     - ##### Demo
         - PBRotationComponent Setup
-            -  ![PBScaleComponent Setup](/Plugins/PBExp/Resources/PBRotationComponent Setup.gif)
+            -  ![PBScaleComponent Setup](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Setup.gif)
         - PBRotationComponent Sine Rotation Single Axis
-            -  ![PBScaleComponent Sine Scaling](/Plugins/PBExp/Resources/PBRotationComponent Sine Rotation Single Axis.gif)
+            -  ![PBScaleComponent Sine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Sine%20Rotation%20Single%20Axis.gif)
         -  PBRotationComponent Sine Rotation Multi Axis
-            -  ![PBScaleComponent Cosine Scaling](/Plugins/PBExp/Resources/PBRotationComponent Sine Rotation Multi Axis.gif)
+            -  ![PBScaleComponent Cosine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Sine%20Rotation%20Multi%20Axis.gif)
         - PBRotationComponent Cosine Rotation Single Axis
-            -  ![PBScaleComponent Sine Scaling](/Plugins/PBExp/Resources/PBRotationComponent Cosine Rotation Single Axis.gif)
+            -  ![PBScaleComponent Sine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Cosine%20Rotation%20Single%20Axis.gif)
         -  PBRotationComponent Cosine Rotation Multi Axis
-            -  ![PBScaleComponent Cosine Scaling](/Plugins/PBExp/Resources/PBRotationComponent Cosine Rotation Multi Axis.gif) 
+            -  ![PBScaleComponent Cosine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Cosine%20Rotation%20Multi%20Axis.gif) 
         -  PBRotationComponent Demo
-            -  ![PBScaleComponent Cosine Scaling](/Plugins/PBExp/Resources/PBRotationComponent Demo.gif)
+            -  ![PBScaleComponent Cosine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Demo.gif)
