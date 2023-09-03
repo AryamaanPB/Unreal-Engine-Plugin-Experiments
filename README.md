@@ -9,7 +9,7 @@ This plugin is a collection of basic components and scenes that I get to play ar
     - ##### Properties
         - **SelectedAlgo**
             - *Type* : **EPBAlgorithm**
-            - *Description*: The Algorithm you choose to scale your components
+            - *Description*: An Enum of algorithms that can be used to apply to any logic
             - *Options*:
                 - **Sine**: Follows a Sine wave: sin(x)
                 - **Cosine**: Follows a Cosine wave: cos(x)
@@ -24,11 +24,50 @@ This plugin is a collection of basic components and scenes that I get to play ar
             - *Description*: The frequency with which the scale should modulate
         - **bStrictlyPositive**
             - *Type*: **bool**
-            - *Description*: Whether the Sine wave should go below 0.0 Changes MinScaleFactor to |MinScaleFactor|
+            - *Description*: Whether the wave should go below 0.0 Changes MinScaleFactor to |MinScaleFactor|
     - ##### Demo
         - PBScaleComponent Setup
-            -  ![PBScaleComponent Setup](/Plugins/PBExp/Resources/PBScaleComponent Setup.gif)
+            - ![PBScaleComponent Setup](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBScaleComponent%20Setup.gif)
         - PBScaleComponent Sine Scaling
-            -  ![PBScaleComponent Sine Scaling](/Plugins/PBExp/Resources/PBScaleComponent Sine.gif)
+            -  ![PBScaleComponent Sine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBScaleComponent%20Sine.gif)
         -  PBScaleComponent Cosine Scaling
-            -  ![PBScaleComponent Cosine Scaling](/Plugins/PBExp/Resources/PBScaleComponent Cosine.gif)
+            -  ![PBScaleComponent Cosine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBScaleComponent%20Cosine.gif)
+        -  PBScaleComponent Demo
+            -  ![PBScaleComponent Demo](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBScaleComponent%20Demo.gif)
+- ##### UPBRotationComponent
+    - ##### Properties
+        - **SelectedAlgo**
+            - *Type* : **EPBAlgorithm**
+            - *Description*: An Enum of algorithms that can be used to apply to any logic
+            - *Options*:
+                - **Sine**: Follows a Sine wave: sin(x)
+                - **Cosine**: Follows a Cosine wave: cos(x)
+        - **SelectedAxis**
+            - *Type* : **EPBAxis**
+            - *Description*: An Enum of Axes
+            - *Options*:
+                - **X**: X Axis
+                - **Y**: Y Axis
+                - **Z**: Z Axis
+        - **Amplitude**
+            - *Type*: **float**
+            - *Description*: The amplitude for your rotation
+        - **Frequency**
+            - *Type*: **float**
+            - *Description*: The frequency with which the rotation should modulate
+        - **bStrictlyPositive**
+            - *Type*: **bool**
+            - *Description*: Whether the wave should go below 0.0 Changes MinScaleFactor to |MinScaleFactor|
+    - ##### Demo
+        - PBRotationComponent Setup
+            -  ![PBScaleComponent Setup](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Setup.gif)
+        - PBRotationComponent Sine Rotation Single Axis
+            -  ![PBScaleComponent Sine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Sine%20Single%20Axis.gif)
+        -  PBRotationComponent Sine Rotation Multi Axis
+            -  ![PBScaleComponent Cosine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Sine%20Multi%20Axis.gif)
+        - PBRotationComponent Cosine Rotation Single Axis
+            -  ![PBScaleComponent Sine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Cosine%20Single%20Axis.gif)
+        -  PBRotationComponent Cosine Rotation Multi Axis
+            -  ![PBScaleComponent Cosine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Cosine%20Multi%20Axis.gif)
+        -  PBRotationComponent Demo
+            -  ![PBScaleComponent Cosine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Demo.gif)
