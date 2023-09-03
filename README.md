@@ -98,14 +98,14 @@ This plugin is a collection of basic components and scenes that I get to play ar
             - *Description*: Whether the wave should go below 0.0 Changes MinScaleFactor to |MinScaleFactor|
    - ##### Demo
        - PBTranslationComponent Setup
-           -  ![PBTranslationComponent Setup](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Setup.gif)
+           -  ![PBTranslationComponent Setup](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBTranslationComponent%20Setup.gif)
        - PBTranslationComponent Sine Translation Single Axis
-           -  ![PBTranslationComponent Sine Translation Single Axis](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Sine%20Single%20Axis.gif)
+           -  ![PBTranslationComponent Sine Translation Single Axis](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBTranslationComponent%20Sine%20Translation%20Single%20Axis.gif)
        -  PBTranslationComponent Sine Translation Multi Axis
-           -  ![PBTranslationComponent Sine Translation Multi Axis](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Sine%20Multi%20Axis.gif)
+           -  ![PBTranslationComponent Sine Translation Multi Axis](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBTranslationComponent%20Sine%20Translation%20Multi%20Axis.gif)
        - PBTranslationComponent Cosine Translation Single Axis
-           -  ![PBTranslationComponent Cosine Translation Single Axis](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Cosine%20Single%20Axis.gif)
+           -  ![PBTranslationComponent Cosine Translation Single Axis](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBTranslationComponent%20Cosine%20Translation%20Single%20Axis.gif)
        -  PBTranslationComponent Cosine Translation Multi Axis
-           -  ![PBTranslationComponent Cosine Translation Multi Axis](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Cosine%20Multi%20Axis.gif)
+           -  ![PBTranslationComponent Cosine Translation Multi Axis](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBTranslationComponent%20Cosine%20Translation%20Multi%20Axis.gif)
        -  PBTranslationComponent Demo
-           -  ![PBTranslationComponent Demo](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Demo.gif)
+           -  ![PBTranslationComponent Demo](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBScaleComponent%20Demo.gif)
