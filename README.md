@@ -57,17 +57,55 @@ This plugin is a collection of basic components and scenes that I get to play ar
             - *Description*: The frequency with which the rotation should modulate
         - **bStrictlyPositive**
             - *Type*: **bool**
-            - *Description*: Whether the wave should go below 0.0 Changes MinScaleFactor to |MinScaleFactor|
+            - *Description*: Whether the wave should go below 0.0 
     - ##### Demo
         - PBRotationComponent Setup
-            -  ![PBScaleComponent Setup](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Setup.gif)
+            -  ![PBRotationComponent Setup](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Setup.gif)
         - PBRotationComponent Sine Rotation Single Axis
-            -  ![PBScaleComponent Sine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Sine%20Single%20Axis.gif)
+            -  ![PBRotationComponent Sine Rotation Single Axis](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Sine%20Single%20Axis.gif)
         -  PBRotationComponent Sine Rotation Multi Axis
-            -  ![PBScaleComponent Cosine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Sine%20Multi%20Axis.gif)
+            -  ![PBRotationComponent Sine Rotation Multi Axis](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Sine%20Multi%20Axis.gif)
         - PBRotationComponent Cosine Rotation Single Axis
-            -  ![PBScaleComponent Sine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Cosine%20Single%20Axis.gif)
+            -  ![PBRotationComponent Cosine Rotation Single Axis](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Cosine%20Single%20Axis.gif)
         -  PBRotationComponent Cosine Rotation Multi Axis
-            -  ![PBScaleComponent Cosine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Cosine%20Multi%20Axis.gif)
+            -  ![PBRotationComponent Cosine Rotation Multi Axis](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Cosine%20Multi%20Axis.gif)
         -  PBRotationComponent Demo
-            -  ![PBScaleComponent Cosine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Demo.gif)
+            -  ![PBRotationComponent Demo](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Demo.gif)
+
+- ##### UPBTranslationComponent
+    - ##### Properties
+        - **SelectedAlgo**
+            - *Type* : **EPBAlgorithm**
+            - *Description*: An Enum of algorithms that can be used to apply to any logic
+            - *Options*:
+                - **Sine**: Follows a Sine wave: sin(x)
+                - **Cosine**: Follows a Cosine wave: cos(x)
+        - **SelectedAxis**
+            - *Type* : **EPBAxis**
+            - *Description*: An Enum of Axes
+            - *Options*:
+                - **X**: X Axis
+                - **Y**: Y Axis
+                - **Z**: Z Axis
+        - **Amplitude**
+            - *Type*: **float**
+            - *Description*: The amplitude for your translation
+        - **Frequency**
+            - *Type*: **float**
+            - *Description*: The frequency with which the translatiom should modulate
+        - **bStrictlyPositive**
+            - *Type*: **bool**
+            - *Description*: Whether the wave should go below 0.0 Changes MinScaleFactor to |MinScaleFactor|
+   - ##### Demo
+       - PBTranslationComponent Setup
+           -  ![PBTranslationComponent Setup](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Setup.gif)
+       - PBTranslationComponent Sine Translation Single Axis
+           -  ![PBTranslationComponent Sine Translation Single Axis](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Sine%20Single%20Axis.gif)
+       -  PBTranslationComponent Sine Translation Multi Axis
+           -  ![PBTranslationComponent Sine Translation Multi Axis](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Sine%20Multi%20Axis.gif)
+       - PBTranslationComponent Cosine Translation Single Axis
+           -  ![PBTranslationComponent Cosine Translation Single Axis](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Cosine%20Single%20Axis.gif)
+       -  PBTranslationComponent Cosine Translation Multi Axis
+           -  ![PBTranslationComponent Cosine Translation Multi Axis](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Cosine%20Multi%20Axis.gif)
+       -  PBTranslationComponent Demo
+           -  ![PBTranslationComponent Demo](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBRotationComponent%20Demo.gif)
