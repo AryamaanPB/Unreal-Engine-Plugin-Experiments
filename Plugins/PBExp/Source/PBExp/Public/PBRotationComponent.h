@@ -28,37 +28,40 @@ public:
 public:
 
 	/*The Algorithm you choose to rotate your components*/
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "PB Scale")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "PB Rotate")
 		EPBScaleAlgorithm SelectedAlgo = EPBScaleAlgorithm::Sine;
 
 	/*The Axes you choose to rotate your components on*/
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "PB Scale", meta = (Bitmask, BitmaskEnum = EPBAxis))
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "PB Rotate", meta = (Bitmask, BitmaskEnum = EPBAxis))
 		int SelectedAxis = static_cast<int32>(EPBAxis::X);
 
-	/*The maximum multiplier to your actor's scale*/
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "PB Scale")
+	/*The maximum multiplier to your actor's rotation*/
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "PB Rotate")
 		float Amplitude = 1.0;
 
-	/*The frequency with which the scale should modulate*/
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "PB Scale")
+	/*The frequency with which the rotation should modulate*/
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "PB Rotate")
 		float Frequency = 2;
 
-	/*Whether the Sine wave should go below 0
-	Changes MinScaleFactor to |MinScaleFactor|
-	*/
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "PB Scale")
+	/*Whether the Sine wave should go below 0*/
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "PB Rotate")
 		bool bStrictlyPositive = true;
 
 private:
-	/*Scale your actor in a sinusoidal manner by tweaking the properties available in the detail panel
+	/*Get the AddRotation using Sine
 	This function is called in Tick().
 	*/
-	void RotateActorWithSine();
+	float GetSineOffset();
 
-	/*Scale your actor in a cosinusoidal manner by tweaking the properties available in the detail panel
+	/*Get the AddRotation using Cosine
 	This function is called in Tick().
 	*/
-	void RotateActorWithCosine();
+	float GetCosineOffset();
+
+	/*Rotate your actor by Adding Rotation offset calculated by whichever algorithm
+	This function is called in Tick().
+	*/
+	void RotateActor(float AddRotation);
 
 private:
 

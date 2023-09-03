@@ -50,15 +50,20 @@ public:
 	bool bStrictlyPositive = true;
 
 private:
-	/*Scale your actor in a sinusoidal manner by tweaking the properties available in the detail panel
+	/*Get the ScaleMultiplier using Sine
 	This function is called in Tick().
 	*/
-	void ScaleActorWithSine();
+	float GetSineOffset();
 
-	/*Scale your actor in a cosinusoidal manner by tweaking the properties available in the detail panel
+	/*Get the ScaleMultiplier using Cosine
 	This function is called in Tick().
 	*/
-	void ScaleActorWithCosine();
+	float GetCosineOffset();
+	
+	/*Scale your actor by multiplying ScaleMultiplier calculated by whichever algorithm
+	This function is called in Tick().
+	*/
+	void ScaleActor(float ScaleMultiplier);
 
 private:
 

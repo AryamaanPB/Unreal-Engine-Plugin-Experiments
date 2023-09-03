@@ -15,8 +15,6 @@ UPBRotationComponent::UPBRotationComponent()
 
     if (MainActor)
     {
-        OriginalRotation = MainActor->GetActorRotation();
-
         UStaticMeshComponent* StaticMeshComp = MainActor->FindComponentByClass<UStaticMeshComponent>();
         if (StaticMeshComp)
         {
@@ -32,7 +30,10 @@ void UPBRotationComponent::BeginPlay()
 	Super::BeginPlay();
 
 	// ...
-
+    if (MainActor)
+    {
+        OriginalRotation = MainActor->GetActorRotation();
+    }
 }
 
 
@@ -43,78 +44,63 @@ void UPBRotationComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 
 	// ...
 
+    float AddRotation;
+
 	if (SelectedAlgo == EPBScaleAlgorithm::Sine)
 	{
-		RotateActorWithSine();
+        AddRotation = GetSineOffset();
 	}
 	else if (SelectedAlgo == EPBScaleAlgorithm::Cosine)
 	{
-		RotateActorWithCosine();
+        AddRotation = GetCosineOffset();
 	}
+
+    RotateActor(AddRotation);
 }
 
-void UPBRotationComponent::RotateActorWithSine()
+float UPBRotationComponent::GetSineOffset()
 {
-    // Validate the owner actor
+    // Get the world time
+    float Time = GetWorld()->GetTimeSeconds();
+
+    // Calculate the appropriate Sine value
+    float AddRotation = FMath::Sin(Time * Frequency) * Amplitude;
+
+    return AddRotation;
+}
+
+
+float UPBRotationComponent::GetCosineOffset()
+{
+    // Get the world time
+    float Time = GetWorld()->GetTimeSeconds();
+
+    // Calculate the appropriate Sine value
+    float AddRotation = FMath::Cos(Time * Frequency) * Amplitude;
+
+    return AddRotation;
+}
+
+void UPBRotationComponent::RotateActor(float AddRotation)
+{
     if (MainActor)
     {
-        // Get the world time
-        float Time = GetWorld()->GetTimeSeconds();
-
-        // Calculate the appropriate Sine value
-        float RotationMultiplier = FMath::Sin(Time * Frequency) * Amplitude;
-
         // Calculate the new rotation
         FRotator NewRotation = OriginalRotation;
 
         if (SelectedAxis & static_cast<int32>(EPBAxis::X))
         {
-            NewRotation.Add(RotationMultiplier, 0, 0);
+            NewRotation.Add(AddRotation, 0, 0);
         }
 
         if (SelectedAxis & static_cast<int32>(EPBAxis::Y))
         {
-            NewRotation.Add(0, RotationMultiplier, 0);
+            NewRotation.Add(0, AddRotation, 0);
         }
 
         if (SelectedAxis & static_cast<int32>(EPBAxis::Z))
         {
-            NewRotation.Add(0, 0, RotationMultiplier);
-        }
-
-        // Set the actor's new rotation
-        MainActor->SetActorRotation(NewRotation);
-    }
-}
-
-
-void UPBRotationComponent::RotateActorWithCosine()
-{
-    // Validate the owner actor
-    if (MainActor)
-    {
-        // Get the world time
-        float Time = GetWorld()->GetTimeSeconds();
-
-        // Calculate the appropriate Sine value
-        float RotationMultiplier = FMath::Cos(Time * Frequency) * Amplitude;
-
-        // Calculate the new rotation
-        FRotator NewRotation = OriginalRotation;
-
-        if (SelectedAxis & static_cast<int32>(EPBAxis::X))
-        {
-            NewRotation.Add(RotationMultiplier, 0, 0);
-        }
-
-        if (SelectedAxis & static_cast<int32>(EPBAxis::Y))
-        {
-            NewRotation.Add(0, RotationMultiplier, 0);
-        }
-
-        if (SelectedAxis & static_cast<int32>(EPBAxis::Z))
-        {
-            NewRotation.Add(0, 0, RotationMultiplier);
+            NewRotation.Add(0, 0, AddRotation);
         }
 
         // Set the actor's new rotation

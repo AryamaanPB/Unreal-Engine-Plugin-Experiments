@@ -39,68 +39,69 @@ void UPBScaleComponent::TickComponent(float DeltaTime, ELevelTick TickType, FAct
 
 	//Calling the Scaling function in Tick()
 
+	float ScaleMultiplier;
+
 	if (SelectedAlgo == EPBScaleAlgorithm::Sine)
 	{
-		ScaleActorWithSine();
+		ScaleMultiplier = GetSineOffset();
 	}
 	else if (SelectedAlgo == EPBScaleAlgorithm::Cosine)
 	{
-		ScaleActorWithCosine();
+		ScaleMultiplier = GetCosineOffset();
 	}
+
+	ScaleActor(ScaleMultiplier);
 
 }
 
 // Function to scale the actor in a positive sinusoidal way
-void UPBScaleComponent::ScaleActorWithSine()
+float UPBScaleComponent::GetSineOffset()
 {
-	//Validating the owner actor
-	if (MainActor)
+	//Getting world time
+	float Time = GetWorld()->GetTimeSeconds();
+
+	//Calculating the appropriate Sine value
+	float ScaleMultiplier;
+
+	//Calculating the Cosinusoidal Scale Multiplier
+	if (bStrictlyPositive)
 	{
-		//Getting world time
-		float Time = GetWorld()->GetTimeSeconds();
-
-		//Calculating the appropriate Sine value
-		float ScaleMultiplier;
-
-		//Calculating the Sinusoidal Scale Multiplier
-		if (bStrictlyPositive)
-		{
-			ScaleMultiplier = FMath::Abs(FMath::Sin(Time * Frequency) * (MaxScaleFactor - FMath::Abs(MinScaleFactor))) + FMath::Abs(MinScaleFactor);
-		}
-		else
-		{
-			ScaleMultiplier = FMath::Sin(Time * Frequency) * (MaxScaleFactor - MinScaleFactor) + MinScaleFactor;
-		}
-
-		//Calculating the new scale
-		FVector NewScale = OriginalScale * ScaleMultiplier;
-
-		//Setting the actor's new scale
-		MainActor->SetActorScale3D(NewScale);
+		ScaleMultiplier = FMath::Abs(FMath::Sin(Time * Frequency) * (MaxScaleFactor - FMath::Abs(MinScaleFactor))) + FMath::Abs(MinScaleFactor);
 	}
+	else
+	{
+		ScaleMultiplier = FMath::Sin(Time * Frequency) * (MaxScaleFactor - MinScaleFactor) + MinScaleFactor;
+	}
+
+	return ScaleMultiplier;
 }
 
-void UPBScaleComponent::ScaleActorWithCosine()
+float UPBScaleComponent::GetCosineOffset()
+{
+	//Getting world time
+	float Time = GetWorld()->GetTimeSeconds();
+
+	//Calculating the appropriate Sine value
+	float ScaleMultiplier;
+
+	//Calculating the Cosinusoidal Scale Multiplier
+	if (bStrictlyPositive)
+	{
+		ScaleMultiplier = FMath::Abs(FMath::Cos(Time * Frequency) * (MaxScaleFactor - FMath::Abs(MinScaleFactor))) + FMath::Abs(MinScaleFactor);
+	}
+	else
+	{
+		ScaleMultiplier = FMath::Cos(Time * Frequency) * (MaxScaleFactor - MinScaleFactor) + MinScaleFactor;
+	}
+
+	return ScaleMultiplier;
+}
+
+void UPBScaleComponent::ScaleActor(float ScaleMultiplier)
 {
 	//Validating the owner actor
 	if (MainActor)
 	{
-		//Getting world time
-		float Time = GetWorld()->GetTimeSeconds();
-
-		//Calculating the appropriate Sine value
-		float ScaleMultiplier;
-
-		//Calculating the Cosinusoidal Scale Multiplier
-		if (bStrictlyPositive)
-		{
-			ScaleMultiplier = FMath::Abs(FMath::Cos(Time * Frequency) * (MaxScaleFactor - FMath::Abs(MinScaleFactor))) + FMath::Abs(MinScaleFactor);
-		}
-		else
-		{
-			ScaleMultiplier = FMath::Cos(Time * Frequency) * (MaxScaleFactor - MinScaleFactor) + MinScaleFactor;
-		}
-
 		//Calculating the new scale
 		FVector NewScale = OriginalScale * ScaleMultiplier;
 
