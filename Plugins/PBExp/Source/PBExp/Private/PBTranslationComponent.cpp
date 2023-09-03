@@ -104,19 +104,6 @@ void UPBTranslationComponent::TranslateActor(float AddLocation)
 
         // Set the actor's new location
         MainActor->SetActorLocation(NewLocation);
-
-        // Debug messages to show the original and new locations
-        FString OriginalLocationMsg = FString::Printf(TEXT("Original Location: %s"), *OriginalLocation.ToString());
-        FString NewLocationMsg = FString::Printf(TEXT("New Location: %s"), *NewLocation.ToString());
-
-        FColor TextColor = FColor::White;
-        float DisplayTime = 2.0f; // Display time in seconds
-
-        // Display the original location
-        GEngine->AddOnScreenDebugMessage(0, DisplayTime, TextColor, OriginalLocationMsg);
-
-        // Display the new location
-        GEngine->AddOnScreenDebugMessage(1, DisplayTime, TextColor, NewLocationMsg);
     }
 }
 
