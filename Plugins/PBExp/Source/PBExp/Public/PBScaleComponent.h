@@ -4,17 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "PBFlags.h"
 #include "PBScaleComponent.generated.h"
 
-/*An Enum of algorithms that can be used to scale your actor up and down*/
-UENUM()
-enum class EPBScaleAlgorithm : uint8
-{
-	Sine, /*Follows a Sine wave: sin(x)*/
-	Cosine, /*Follows a Cosine wave: cos(x)*/
-};
 
-UCLASS( ClassGroup=(PBScaleComponents), meta=(BlueprintSpawnableComponent) )
+UCLASS( ClassGroup=(PBActorComponents), meta=(BlueprintSpawnableComponent) )
 class PBEXP_API UPBScaleComponent : public UActorComponent
 {
 	GENERATED_BODY()
