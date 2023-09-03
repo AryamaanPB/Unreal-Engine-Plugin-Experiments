@@ -34,6 +34,7 @@ This plugin is a collection of basic components and scenes that I get to play ar
             -  ![PBScaleComponent Cosine Scaling](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBScaleComponent%20Cosine.gif)
         -  PBScaleComponent Demo
             -  ![PBScaleComponent Demo](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBScaleComponent%20Demo.gif)
+
 - ##### UPBRotationComponent
     - ##### Properties
         - **SelectedAlgo**
@@ -92,10 +93,10 @@ This plugin is a collection of basic components and scenes that I get to play ar
             - *Description*: The amplitude for your translation
         - **Frequency**
             - *Type*: **float**
-            - *Description*: The frequency with which the translatiom should modulate
+            - *Description*: The frequency with which the translation should modulate
         - **bStrictlyPositive**
             - *Type*: **bool**
-            - *Description*: Whether the wave should go below 0.0 Changes MinScaleFactor to |MinScaleFactor|
+            - *Description*: Whether the wave should go below 0.0
    - ##### Demo
        - PBTranslationComponent Setup
            -  ![PBTranslationComponent Setup](https://github.com/AryamaanPB/Unreal-Engine-Plugin-Experiments/blob/dev_actorcomp/Plugins/PBExp/Resources/PBTranslationComponent%20Setup.gif)
